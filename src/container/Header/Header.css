@@ -1,0 +1,152 @@
+.Header__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1030;
+    background: #fff;
+    border-radius: 8px;
+
+    position: relative;
+    height: 80px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 1rem;
+    width: 100%;
+
+    justify-content: flex-start;
+}
+
+.Header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.Header .Header__col1 {
+    order: 2;
+    flex: 0 0 257px;
+}
+
+.Header .Header__col4 {
+    order: 3;
+    padding-right: 10px;
+}
+
+.Header .Header__col5 {
+    order: 4;
+    display: flex;
+    flex-direction: row;
+}
+
+.Header .Header__col1 {
+    /* not grow, not shrink, width */
+}
+
+.Home .Header .Header__col1,
+.Header .Header__logo {
+    max-width: 100%;
+    height: 100%;
+}
+
+.Home .Header .Header__logo img {
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Header__col {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+.Header__col>button {
+    background: #fff;
+    color: var(--Red500);
+    border-radius: 0 0 50% 50%;
+    height: 60px;
+    width: 120px;
+
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    transition: all 0.7s ease;
+}
+
+.Header__col>button.Header__btn--active {
+    background: var(--Red500);
+    color: #fff;
+    border-radius: 0 0 12px 12px;
+    padding-bottom: 10px;
+    height: 70px;
+}
+
+.Header__col>button:hover {
+    background: var(--Red500);
+    color: #fff;
+    border-radius: 0 0 12px 12px;
+    padding-bottom: 10px;
+    height: 70px;
+    /* transform: rotate(250deg); */
+}
+
+
+.Header .Header__col2,
+.Header .Header__col3,
+.Header .Header__col4,
+.Header .Header__col5 {
+    display: flex;
+    align-items: center;
+    flex: 0 0 120px;
+}
+
+.Header .Header__col6 {
+    display: flex;
+    align-items: center;
+    flex: 0 0 320px;
+}
+
+.Header__btn-actualperiod,
+.Header__btn-historic {
+    margin: 0px 12px;
+}
+
+.Header .Header__col4 {
+    text-align: right;
+    flex: 1;
+}
+
+.Header .Header__col5 {
+    flex: 0 0 50px;
+}
+
+.Header .Header__col2 {
+    order: 2
+}
+
+.Header .Header__col3 {
+    order: 3
+}
+
+.Header .Header__col6 {
+    order: 6;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.Header__btn-logout {
+    color: var(--color-red);
+    margin-left: 6px;
+    font-size: 0.7rem;
+    cursor: pointer;
+}

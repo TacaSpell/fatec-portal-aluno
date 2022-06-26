@@ -1,0 +1,35 @@
+{
+  "course_name": "Administração Geral",
+  "final_score_average": 8.2,
+  "presence": 36,
+  "user_id": "8aQM2Gz2XofwVWucu4U9OBvgQLh2",
+  "note": "Aprovado por Nota e Frequência",
+  "absence": 11,
+  "period_semester": 2,
+  "utilization_of_study": 4,
+  "status": "aprovado",
+  "activities_details": [
+    {
+      "valuation_type": "PR",
+      "score": 7,
+      "release_date": {}
+    },
+    {
+      "valuation_type": "AT",
+      "score": 8.5,
+      "release_date": {}
+    },
+    {
+      "valuation_type": "P1",
+      "score": 10,
+      "release_date": {}
+    },
+    {
+      "valuation_type": "P2",
+      "score": 8,
+      "release_date": {}
+    }
+  ],
+  "period": 20202,
+  "course_initials": "AAG001"
+}

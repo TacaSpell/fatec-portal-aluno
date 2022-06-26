@@ -1,0 +1,29 @@
+.NoRouteFound {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 100vh;
+}
+
+.NoRouteFound h1 {
+    margin-bottom: 24px;
+    font-size: 3rem;
+}
+
+.NoRouteFound div {
+    font-size: 1.3rem;
+}
+
+.NoRouteFound__link {
+    color: #f36;
+    text-decoration: non;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+.NoRouteFound__link:hover {
+    color: #f68;
+}
+

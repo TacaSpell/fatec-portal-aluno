@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+:root{
+    --color-dark: #333;
+    --color-red: #f36;
+    
+    --Red50:#FFF5F5;
+    --Red100:#FED7D7;
+    --Red200:#FEB2B2;
+    --Red300:#FC8181;
+    --Red400:#F56565;
+    --Red500:#E53E3E;
+    --Red600:#C53030;
+    --Red700:#9B2C2C;
+    --Red800:#822727;
+    --Red900:#63171B;
+
+    --Green50:#F0FFF4;
+    --Green100:#C6F6D5;
+    --Green200:#9AE6B4;
+    --Green300:#68D391;
+    --Green400:#48BB78;
+    --Green500:#38A169;
+    --Green600:#2F855A;
+    --Green700:#276749;
+    --Green800:#22543D;
+    --Green900:#1C4532;
+
+    --Gray25:#fbfdff;
+    --Gray35:#f6f9fc;
+    --Gray50:#f3f3f3;
+    --Gray100:#EDF2F7;
+    --Gray200:#E2E8F0;
+    --Gray300:#CBD5E0;
+    --Gray400:#A0AEC0;
+    --Gray500:#718096;
+    --Gray600:#4A5568;
+    --Gray700:#2D3748;
+    --Gray800:#1A202C;
+    --Gray900:#171923;
+    
+    --Blue50:#EBF8FF;
+    --Blue100: #BEE3F8;
+    --Blue200: #90CDF4;
+    --Blue300: #63B3ED;
+    --Blue400: #4299E1;
+    --Blue500: #3182CE;
+    --Blue600: #2B6CB0;
+    --Blue700: #2C5282;
+    --Blue800: #2A4365;
+    --Blue900: #1A365D;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+  html,
+body{
+  background:var(#fff);
+}
+
+body, input ,textarea , select, button{
+  font:400 16px "Roboto", sans-serif;
+}
+
+button{
+  cursor:pointer;
+  background: none;
+  border: 0;
+  font-weight: 600;
+  color:  var(--Gray600);
+  border-radius: 15px;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+  color: var(--Blue800);
+}
+a:hover{
+    color: var(--Blue500);
+    background-color: var(--Gray300) ;
+    filter: brightness(0.2);
+}
+strong{
+    font-weight: 600;
+    color: var(--Gray500);
+    font-size:0.875rem;
+}
+span{
+    font-weight: 400;
+    color: var(--Gray400);
+    font-size:0.875rem;
+}
+
+
+
+/*font-size: 16px Desktop  
+16 x 0,9375 =15px
+16 x 0,875  =14px
+16x 0.75 = 12px
+REM = 1rem  = font-size atual 16px
+porcentual da acessibilidade de acordo com o juste da pessoa*/
+
+@media (max-width: 1080px){
+    html{
+        font-size:93.75%;
+    }
+  }
+  
+  @media (max-width: 720px){
+    html{
+        font-size:87.5%;
+    }
+  }

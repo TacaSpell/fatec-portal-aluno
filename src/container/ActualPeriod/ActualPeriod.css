@@ -1,0 +1,43 @@
+.ActualPeriod__container{
+    width: 100%;
+}
+
+.ActualPeriod__buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+}
+
+.ActualPeriod__buttons>button {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    background-color: var(--Gray25);
+    /* margin-bottom: 2rem; */
+    color: var(--Gray500);
+    border-radius: 0px;
+}
+.ActualPeriod__buttons>button {
+    border-right: 1px solid var(--Gray300);
+    border-radius: 0;
+    border-bottom: solid 1px var(--Gray300);
+    transition: all 0.3s ease;
+}
+
+.ActualPeriod__buttons>button:hover {
+    border-bottom: solid 0.2rem var(--Red400);
+    margin-top: 0.2rem;
+    border-radius: 0;
+}
+
+.ActualPeriod__partialnotes_button--active,
+.ActualPeriod__partialabsences_button--active,
+.ActualPeriod__schedules_button--active {
+    border-bottom: solid 0.2rem var(--Red500) !important;
+    margin-top: 0.2rem;
+    background-color: var(--Red500) !important;
+    color: #fff !important;
+    border-radius: 0;
+}
+

@@ -1,0 +1,9 @@
+{
+  "users": {
+    "name": "Yan David",
+    "email": "yan.folk@gmail.com",
+    "student_ra": 84961465,
+    "profile_img": "https://scontent.fcgh17-1.fna.fbcdn.net/v/t1.6435-9/119542085_3758472007515714_3376218864691174726_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGjF84KPV3mmp_ohTsAJ_x6ZBUSa0Ur8pZkFRJrRSvyltC3ufgnnE6KW_svgBUtzA0jFzEkL0RquWR2n6NwF-CH&_nc_ohc=fsSxMNejPBQAX8hg5rT&_nc_oc=AQlNYtaiCaAnK9FNx-FgRB3xzVCYWiXstfTY8t8Nya20yV-PhrEW5GqEg1ZIRB-sH0AVXGSPExELleDZiiFJmGfo&_nc_ht=scontent.fcgh17-1.fna&oh=00_AT-sNJBmAOhkinZdRcIj7YHs9XgRBatcgONi50NrhZ5YNA&oe=62DE1260",
+    "is_active": true
+  }
+}

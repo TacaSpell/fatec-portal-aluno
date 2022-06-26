@@ -1,0 +1,11 @@
+.Main__container {
+    display: flex;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.Main__content {
+    background: var(--Gray100);
+    width: 100%;
+}

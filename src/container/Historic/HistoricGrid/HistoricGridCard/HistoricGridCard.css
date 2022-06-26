@@ -1,0 +1,88 @@
+.HistoricGrid__card_container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  min-width: 230px;
+  height: 160px;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 8px 8px 20px 8px;
+
+  box-shadow: 2px 2px 12px 4px #00000008;
+}
+
+.HistoricGrid__card_title {
+  display: flex;
+  /* padding: 8px 12px 4px; */
+  justify-content: space-between;
+}
+
+.HistoricGrid__card_title>h2 {
+  font-size: 1rem;
+  color: var(--color-dark);
+}
+
+.HistoricGrid__card_title>span {
+  font-size: 1rem;
+  color: var(--color-dark);
+}
+
+.HistoricGrid__card_coursename {
+  margin: 4px 0;
+}
+
+.HistoricGrid__card_coursename>span {
+  color: var(--color-dark);
+  font-size: 0.8rem;
+}
+
+.HistoricGrid__card_status {
+  color: var(--color-dark);
+  margin: 4px 0;
+}
+
+.HistoricGrid__card_status>span {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 2px 6px;
+}
+
+.HistoricGrid__card_status--approved {
+  color: #18be52;
+  background: #a7f6b472;
+  border-radius: 8px;
+}
+
+.HistoricGrid__card_status--disapproved {
+  color: #d61f1f;
+  background: #f6a7a772;
+  border-radius: 8px;
+}
+
+.HistoricGrid__card_status--exempted {
+  color: #20a0dc;
+  background: #a7d8f672;
+  border-radius: 8px;
+}
+
+.HistoricGrid__card_status--progress {
+  color: #fab618;
+  background: #eabf0032;
+  border-radius: 8px;
+}
+
+.HistoricGrid__card_status--default {
+  color: var(--color-dark);
+}
+
+.HistoricGrid__card_infos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+
+.HistoricGrid__card_infos > span {
+  color: #666;
+}

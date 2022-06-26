@@ -1,0 +1,56 @@
+.HistoricGrid__container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 80vh;
+  align-items: center;
+  background-color: var(--Gray35);
+
+  border-radius: 0 0 12px 12px;
+}
+
+.HistoricGrid__container::-webkit-scrollbar {
+  width: .6em;
+  height: .6em;
+}
+
+.HistoricGrid__container::-webkit-scrollbar-corner { background: var(--Red500); border-radius: 20px; }
+
+.HistoricGrid__container::-webkit-scrollbar-thumb {
+  background-color: var(--Red500);
+  border-radius: 20px;
+}
+
+.HistoricGrid__container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 .1em var(--Red500);
+  border-radius: 20px;
+}
+
+.HistoricGrid__container>h1 {
+  margin: 2rem 0;
+}
+
+.HistoricGrid__content {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  text-align: left;
+  width: 100%;
+  padding: 0 42px;
+}
+
+.HistoricGrid__title {
+  display: block;
+  /* width: 100%; */
+  text-align: left;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.HistoricGrid__card_group {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,23 @@
+.Schedules__container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 80vh;
+    align-items: center;
+    background-color: var(--Gray35);
+    border-radius: 0 0 12px 12px;
+}
+
+.Schedules__container h1 {
+    color: var(--color-dark);
+    font-weight: 600;
+    padding: 2rem;
+}
+
+.Schedules__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

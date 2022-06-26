@@ -1,0 +1,70 @@
+.LoginPage__container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: var(--Red600);
+}
+
+.LoginPage__form>img {
+  width: 120px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.LoginPage__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 18px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 18px;
+  min-width: 330px;
+  min-height: 380px;
+  box-shadow: 0 2px 8px 4px #00000030;
+}
+
+.LoginPage__form>input {
+  background: #fff;
+  border-radius: 16px;
+  margin: 8px 0;
+  padding: 8px 12px;
+  outline: none;
+  border: none;
+  width: 100%;
+  border: 1px solid #C5303050;
+  font-size: 1rem;
+}
+
+.LoginPage__form>button {
+  background: var(--Red500);
+  color: #fff;
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  outline: none;
+  border: none;
+
+  transition: all 0.3s ease;
+}
+
+.LoginPage__form>button:hover {
+  background: var(--Red600);
+}
+
+.LoginPage__form>span {
+  color: var(--Red400);
+  font-size: 0.8rem;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.LoginPage__form>span:hover {
+  color: var(--Red600);
+  background: transparent;
+}

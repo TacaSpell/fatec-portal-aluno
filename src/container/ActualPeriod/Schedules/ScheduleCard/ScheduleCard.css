@@ -1,0 +1,59 @@
+.ScheduleCard__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    width: 70%;
+}
+
+.ScheduleCard__card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    /* min-height: 220px; */
+    padding-bottom: 12px;
+    border-radius: 8px;
+    margin: 8px 8px 20px 8px;
+    box-shadow: 2px 2px 12px 4px #00000008;
+}
+
+.ScheduleCard__card_title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    background: var(--Red500);
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid var(--Gray100);
+}
+
+.ScheduleCard__table td {
+    padding: 0.2rem;
+}
+
+.ScheduleCard__table {
+    border-bottom: 1px solid var(--Gray100);
+}
+
+.ScheduleCard__table th {
+    color: var(--Gray600);
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--Gray100);
+}
+
+.ScheduleCard__table svg {
+    fill: var(--Red500);
+    color: var(--Red500);
+    position: relative;
+    top: 3px;
+    left: 5px;
+    /* padding-top: 0.5rem; */
+    /* padding: 0.5rem; */
+    /* border-bottom: 1px solid var(--Gray100); */
+}

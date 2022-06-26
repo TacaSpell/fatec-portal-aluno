@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+.ScheduleTable__Container {
+    background-color: var(--Gray25);
+    box-shadow: 2px 2px 12px 4px #00000008;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 1rem;
+}
+
+.ScheduleTable__Container td {
+    padding: 0.5rem;
+    color: var(--Gray500);
+}

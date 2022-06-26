@@ -1,0 +1,81 @@
+.PartialCardNotes__container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center ;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    margin: 1.5rem 1rem;
+}
+.PartialCardNotes__content{
+    background-color: var(--Gray50);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
+    background-color: var(--Gray25); 
+    min-width: 380px;  
+}
+
+.PartialCardNotes__card_title{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 1rem;
+    background: var(--Red500);
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid var(--Gray100);
+    
+}
+
+.PartialCardNotes__card_notesinfo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-size: 0.85rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.7rem;    
+    padding: 0 1rem 1rem 1rem;
+}
+
+.PartialCardNotes__card_table{
+    width: 100%;
+    margin-bottom: 1rem;
+}   
+    
+.PartialCardNotes__card_table_th_title_avaluation >th{
+    color: var(--Gray600);
+    font-size: 0.85rem;
+}
+                       
+.PartialCardNotes__card_table_tr_avaluation table,tr,td{
+    text-align: center;
+    color: var(--Gray400);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.PartialCardNotes__card_additionalinfos {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+                              
+.PartialCardNotes__card_finalscore,
+.PartialCardNotes__card_absences,
+.PartialCardNotes__card_media_percent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0.85rem;
+    font-size: 0.8rem;
+    color: var(--Blue800);
+}
+
