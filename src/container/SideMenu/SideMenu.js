@@ -1,14 +1,16 @@
 import './SideMenu.css';
 import '../../style/global.css';
-import { useContext } from 'react';
+import { useContext, useRef } from 'react';
 import { UserContext } from '../../context/UserContext';
 import { logout, sendPasswordReset } from '../../services/api/authAction';
 import { postCourseUser } from '../../services/api/courseUserAction';
 import { AuthContext } from '../../context/AuthContext';
+import { toast } from 'react-toastify';
 
 export default function SideMenu() {
     const { user, courseUser } = useContext(UserContext);
     const { authenticatedUser } = useContext(AuthContext);
+    const clickedOnImport = useRef(false);
 
     const handleResetPassword = async () => {
         await sendPasswordReset(user.email);
@@ -67,7 +69,15 @@ export default function SideMenu() {
                     <button type="button" className="SideMenu__button">Avisos</button>
                     <button type="button" className="SideMenu__button">Upload Carteira Vacinação</button>
                     <button type="button" className="SideMenu__button" onClick={handleResetPassword}>Alterar Senha</button>
-                    <button type="button" className="SideMenu__button" onClick={() => postCourseUser(authenticatedUser.uid, courseUser)}>Ajuda</button>
+                    <button type="button" className="SideMenu__button" onClick={() => {
+                        clickedOnImport.current === false ?
+                            postCourseUser(authenticatedUser.uid, courseUser) :
+                            toast.warning('Os templates de cursos já foram adicionados para este usuário.');
+
+                        clickedOnImport.current = true;
+
+                    }
+                    }>Ajuda</button>
                     <button type="button" className="SideMenu__button" onClick={logout}>Sair</button>
                 </li>
             </ul>

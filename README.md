@@ -1,7 +1,5 @@
 # Fatec V2 - Portal do Aluno
 
-<img src="fatec-portal-v2-readme.png" alt="banner">
-
 ### Sobre o projeto
 
 Front-end: Portal do Aluno do Centro Paula Souza, utilizando ReactJS.
