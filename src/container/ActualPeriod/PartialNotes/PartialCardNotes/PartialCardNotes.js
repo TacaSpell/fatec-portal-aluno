@@ -34,7 +34,7 @@ export default function PartialCardNotes() {
     },
     {
         title: 'GTS032',
-        course: 'Gestão do Tempo',
+        course: 'Gestão de Projetos',
         finalscore: '8.30',
         absences: 11,
         percent: '95%',
@@ -63,7 +63,7 @@ export default function PartialCardNotes() {
     },
     {
         title: 'ILP516',
-        course: 'Programação dispositivos móveis',
+        course: 'Programação Dispositivos Móveis',
         finalscore: '9.25',
         absences: 5,
         percent: '93%',

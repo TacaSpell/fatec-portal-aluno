@@ -3,6 +3,7 @@ import './HistoricComplete.css';
 import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
 import { UserContext } from '../../../context/UserContext';
 import { getPercent, isStudentNotStudiedCourseYet } from '../../../utils/utils';
+import { APROVADO, REPROVADO, DISPENSADO } from '../../../constants/courseStatus';
 
 export default function HistoricComplete() {
   const { courseUser } = useContext(UserContext);
@@ -27,9 +28,13 @@ export default function HistoricComplete() {
           {courseUser.map((item, i) => {
             const percent = (item.presence + item.absence) === 0 ? 0 : getPercent(item.presence, (item.presence + item.absence));
 
-            const statusIcon = Number(item.final_score_average) > 7 ?
-              <AiOutlineCheck color="green" size={20} /> :
-              <AiOutlineClose color="red" size={20} />
+            const statusIcon =
+              (item.status === APROVADO ||
+                item.status === DISPENSADO) ?
+                <AiOutlineCheck color="green" size={20} /> :
+                item.status === REPROVADO ?
+                  <AiOutlineClose color="red" size={20} /> :
+                  '';
 
             return !isStudentNotStudiedCourseYet(item.status) && (
                 <tr key={item.id}>

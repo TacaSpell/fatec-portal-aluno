@@ -32,11 +32,11 @@ const sanitizeCourseUserMock = (userId) => {
     {
       course_initials: 'AAG001',
       course_name: "Administração Geral",
-      status: "dispensado",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: 10,
       presence: 0,
       absence: 0,
-      note: "Dispensa por Aproveitamento de Estudo",
+      note: "",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 1,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
@@ -48,11 +48,11 @@ const sanitizeCourseUserMock = (userId) => {
     }, {
       course_initials: 'IAC001',
       course_name: "Arquitetura e Organização de Computadores",
-      status: "dispensado",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: 8,
       presence: 0,
       absence: 0,
-      note: "Dispensa por Aproveitamento de Estudo",
+      note: "",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 1,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
@@ -64,11 +64,11 @@ const sanitizeCourseUserMock = (userId) => {
     }, {
       course_initials: 'IAL002',
       course_name: "Algoritmos e Lógica de Programação",
-      status: "dispensado",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: 10,
       presence: 0,
       absence: 0,
-      note: "Dispensa por Aproveitamento de Estudo",
+      note: "",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 1,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
@@ -80,11 +80,11 @@ const sanitizeCourseUserMock = (userId) => {
     }, {
       course_initials: 'IHW100',
       course_name: "Laboratório de Hardware",
-      status: "dispensado",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: getRandomInt(5, 10),
       presence: 0,
       absence: 0,
-      note: "Dispensa por Aproveitamento de Estudo",
+      note: "Aprovado por Nota e Frequência",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 1,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
@@ -112,11 +112,11 @@ const sanitizeCourseUserMock = (userId) => {
     }, {
       course_initials: 'LIN100',
       course_name: "Inglês I",
-      status: "dispensado",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: getRandomInt(1, 5),
       presence: 0,
       absence: 0,
-      note: "Dispensa por Aproveitamento de Estudo",
+      note: "Aprovado por Nota e Frequência",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 1,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
@@ -128,11 +128,11 @@ const sanitizeCourseUserMock = (userId) => {
     }, {
       course_initials: 'MMD001',
       course_name: "Matemática Discreta",
-      status: "dispensado",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: getRandomInt(5, 10),
       presence: 0,
       absence: 0,
-      note: "Dispensa por Aproveitamento de Estudo",
+      note: "Aprovado por Nota e Frequência",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 1,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
@@ -146,11 +146,11 @@ const sanitizeCourseUserMock = (userId) => {
     {
       course_initials: 'CCG001',
       course_name: "Contabilidade",
-      status: "dispensado",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: getRandomInt(5, 10),
       presence: 0,
       absence: 0,
-      note: "Dispensa por Aproveitamento de Estudo",
+      note: "Aprovado por Nota e Frequência",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 2,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
@@ -162,11 +162,11 @@ const sanitizeCourseUserMock = (userId) => {
     }, {
       course_initials: 'IES100',
       course_name: "Engenharia de Software I",
-      status: "dispensado",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: getRandomInt(5, 10),
       presence: 0,
       absence: 0,
-      note: "Dispensa por Aproveitamento de Estudo",
+      note: "Aprovado por Nota e Frequência",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 2,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
@@ -204,22 +204,6 @@ const sanitizeCourseUserMock = (userId) => {
         return ({
           ...activityDetail,
           score: getRandomInt(1, 10),
-          release_date: Timestamp.fromDate(new Date())
-        })
-      })
-    }, {
-      course_initials: 'LIN200',
-      course_name: "Inglês II",
-      status: "dispensado",
-      final_score_average: 0,
-      presence: 0,
-      absence: 0,
-      note: "Dispensa por Aproveitamento de Estudo",
-      utilization_of_study: getRandomInt(1, 5),
-      period_semester: 2,
-      activities_details: courseUserMock.activities_details.map(activityDetail => {
-        return ({
-          ...activityDetail,
           release_date: Timestamp.fromDate(new Date())
         })
       })
@@ -396,11 +380,11 @@ const sanitizeCourseUserMock = (userId) => {
     }, {
       course_initials: 'HST002',
       course_name: "Sociedade e Tecnologia",
-      status: "nao_cursada",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: 8,
       presence: 0,
       absence: 0,
-      note: "Não cursada",
+      note: "Aprovado por Nota e Frequência",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 4,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
@@ -446,11 +430,11 @@ const sanitizeCourseUserMock = (userId) => {
     }, {
       course_initials: 'ILP125',
       course_name: "Programação WEB",
-      status: "cursando",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: 10,
       presence: 0,
       absence: 0,
-      note: "Em curso",
+      note: "Aprovado por Nota e Frequência",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 4,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
@@ -462,11 +446,11 @@ const sanitizeCourseUserMock = (userId) => {
     }, {
       course_initials: 'ISO100',
       course_name: "Sistemas Operacionais I",
-      status: "nao_cursada",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: 7,
       presence: 0,
       absence: 0,
-      note: "Não cursada",
+      note: "Aprovado por Nota e Frequência",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 4,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
@@ -478,11 +462,11 @@ const sanitizeCourseUserMock = (userId) => {
     }, {
       course_initials: 'LIN400',
       course_name: "Inglês IV",
-      status: "nao_cursada",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: 10,
       presence: 0,
       absence: 0,
-      note: "Não cursada",
+      note: "Aprovado por Nota e Frequência",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 4,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
@@ -494,11 +478,11 @@ const sanitizeCourseUserMock = (userId) => {
     }, {
       course_initials: 'TTG001',
       course_name: "Metodologia da Pesquisa Científico - Tecnológica",
-      status: "nao_cursada",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: 7,
       presence: 0,
       absence: 0,
-      note: "Não cursada",
+      note: "Aprovado por Nota e Frequência",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 4,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
@@ -512,11 +496,11 @@ const sanitizeCourseUserMock = (userId) => {
     {
       course_initials: 'IBD100',
       course_name: "Laboratório de Banco de Dados",
-      status: "nao_cursada",
-      final_score_average: 0,
+      status: "aprovado",
+      final_score_average: 9,
       presence: 0,
       absence: 0,
-      note: "Não cursada",
+      note: "Aprovado por Nota e Frequência",
       utilization_of_study: getRandomInt(1, 5),
       period_semester: 5,
       activities_details: courseUserMock.activities_details.map(activityDetail => {
